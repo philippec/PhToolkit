@@ -35,8 +35,7 @@
         return NSOrderedSame;
     if (difference < 0.0)
         return NSOrderedAscending;
-    if (difference > 0.0)
-        return NSOrderedDescending;
+    return NSOrderedDescending;
 }
 
 - (BOOL) isEqualToDateForDay: (NSDate*) otherDate
