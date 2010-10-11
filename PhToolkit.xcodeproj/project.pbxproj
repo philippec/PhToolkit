@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3721291012636D2D002E9847 /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3721290F12636D2D002E9847 /* Tests.m */; };
+		3721293612636ED1002E9847 /* NSDateAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3721293512636ED1002E9847 /* NSDateAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -15,6 +16,8 @@
 		372128F712636C56002E9847 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3721290E12636D2D002E9847 /* Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tests.h; path = tests/Tests.h; sourceTree = "<group>"; };
 		3721290F12636D2D002E9847 /* Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tests.m; path = tests/Tests.m; sourceTree = "<group>"; };
+		3721293412636ED1002E9847 /* NSDateAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDateAdditions.h; path = categories/NSDateAdditions.h; sourceTree = "<group>"; };
+		3721293512636ED1002E9847 /* NSDateAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDateAdditions.m; path = categories/NSDateAdditions.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 		372128D112636BA4002E9847 = {
 			isa = PBXGroup;
 			children = (
+				3721292F12636EC5002E9847 /* Categories */,
 				3721290712636CE9002E9847 /* Tests */,
 				372128F612636C56002E9847 /* Products */,
 				372128F712636C56002E9847 /* Info.plist */,
@@ -52,6 +56,15 @@
 				3721290F12636D2D002E9847 /* Tests.m */,
 			);
 			name = Tests;
+			sourceTree = "<group>";
+		};
+		3721292F12636EC5002E9847 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				3721293412636ED1002E9847 /* NSDateAdditions.h */,
+				3721293512636ED1002E9847 /* NSDateAdditions.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3721291012636D2D002E9847 /* Tests.m in Sources */,
+				3721293612636ED1002E9847 /* NSDateAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
