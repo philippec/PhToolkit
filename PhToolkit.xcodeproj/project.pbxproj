@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3721291012636D2D002E9847 /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3721290F12636D2D002E9847 /* Tests.m */; };
 		3721293612636ED1002E9847 /* NSDateAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3721293512636ED1002E9847 /* NSDateAdditions.m */; };
+		379959561274FCA60035EFC4 /* NSBundleAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 379959551274FCA60035EFC4 /* NSBundleAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,8 @@
 		3721290F12636D2D002E9847 /* Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tests.m; path = tests/Tests.m; sourceTree = "<group>"; };
 		3721293412636ED1002E9847 /* NSDateAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDateAdditions.h; path = categories/NSDateAdditions.h; sourceTree = "<group>"; };
 		3721293512636ED1002E9847 /* NSDateAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDateAdditions.m; path = categories/NSDateAdditions.m; sourceTree = "<group>"; };
+		379959541274FCA60035EFC4 /* NSBundleAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSBundleAdditions.h; path = categories/NSBundleAdditions.h; sourceTree = "<group>"; };
+		379959551274FCA60035EFC4 /* NSBundleAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSBundleAdditions.m; path = categories/NSBundleAdditions.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 		3721292F12636EC5002E9847 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				379959541274FCA60035EFC4 /* NSBundleAdditions.h */,
+				379959551274FCA60035EFC4 /* NSBundleAdditions.m */,
 				3721293412636ED1002E9847 /* NSDateAdditions.h */,
 				3721293512636ED1002E9847 /* NSDateAdditions.m */,
 			);
@@ -146,6 +151,7 @@
 			files = (
 				3721291012636D2D002E9847 /* Tests.m in Sources */,
 				3721293612636ED1002E9847 /* NSDateAdditions.m in Sources */,
+				379959561274FCA60035EFC4 /* NSBundleAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
