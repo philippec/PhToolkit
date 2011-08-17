@@ -13,6 +13,7 @@
 
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 20000
 - (NSString*) pathForResource_ph: (NSString*) name ofType: (NSString*) ext;
+- (NSString*) pathForDocument_ph: (NSString*) name ofType: (NSString*) ext;
 #endif
 
 @end
