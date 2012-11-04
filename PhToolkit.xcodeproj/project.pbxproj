@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3721291012636D2D002E9847 /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3721290F12636D2D002E9847 /* Tests.m */; };
 		3721293612636ED1002E9847 /* NSDateAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3721293512636ED1002E9847 /* NSDateAdditions.m */; };
+		377D5AA21647052400B2F9FC /* TestDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 377D5AA11647052400B2F9FC /* TestDetector.m */; };
 		379959561274FCA60035EFC4 /* NSBundleAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 379959551274FCA60035EFC4 /* NSBundleAdditions.m */; };
 /* End PBXBuildFile section */
 
@@ -19,6 +20,9 @@
 		3721290F12636D2D002E9847 /* Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tests.m; path = tests/Tests.m; sourceTree = "<group>"; };
 		3721293412636ED1002E9847 /* NSDateAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDateAdditions.h; path = categories/NSDateAdditions.h; sourceTree = "<group>"; };
 		3721293512636ED1002E9847 /* NSDateAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDateAdditions.m; path = categories/NSDateAdditions.m; sourceTree = "<group>"; };
+		377D5A9E1647045700B2F9FC /* README.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
+		377D5AA01647052400B2F9FC /* TestDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestDetector.h; path = utilities/TestDetector.h; sourceTree = "<group>"; };
+		377D5AA11647052400B2F9FC /* TestDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestDetector.m; path = utilities/TestDetector.m; sourceTree = "<group>"; };
 		379959541274FCA60035EFC4 /* NSBundleAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSBundleAdditions.h; path = categories/NSBundleAdditions.h; sourceTree = "<group>"; };
 		379959551274FCA60035EFC4 /* NSBundleAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSBundleAdditions.m; path = categories/NSBundleAdditions.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,9 +42,11 @@
 			isa = PBXGroup;
 			children = (
 				3721292F12636EC5002E9847 /* Categories */,
+				377D5A9F164704FE00B2F9FC /* Utilities */,
 				3721290712636CE9002E9847 /* Tests */,
 				372128F612636C56002E9847 /* Products */,
 				372128F712636C56002E9847 /* Info.plist */,
+				377D5A9E1647045700B2F9FC /* README.markdown */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +76,15 @@
 				3721293512636ED1002E9847 /* NSDateAdditions.m */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		377D5A9F164704FE00B2F9FC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				377D5AA01647052400B2F9FC /* TestDetector.h */,
+				377D5AA11647052400B2F9FC /* TestDetector.m */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +170,7 @@
 				3721291012636D2D002E9847 /* Tests.m in Sources */,
 				3721293612636ED1002E9847 /* NSDateAdditions.m in Sources */,
 				379959561274FCA60035EFC4 /* NSBundleAdditions.m in Sources */,
+				377D5AA21647052400B2F9FC /* TestDetector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

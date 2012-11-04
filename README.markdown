@@ -11,3 +11,7 @@ They come with unit tests so you can be assured of their correctness.
 * NSDateAdditions: compare NSDates using days as the cut-off, so that two times in the same day
   are considered equal dates.
 
+* NSBundleAdditions: Easy full path to resources or documents
+
+* TestDetector: detects if Unit Tests are running; useful if your application does something
+  (such as pinging a server) that you don't want it to do when running tests.

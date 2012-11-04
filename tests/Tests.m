@@ -9,6 +9,7 @@
 #import "Tests.h"
 #import "NSDateAdditions.h"
 #import "NSBundleAdditions.h"
+#import "TestDetector.h"
 
 
 @implementation Tests
@@ -139,6 +140,13 @@
 
     STAssertTrue([path1 isEqualToString: path2], @"{%@} should be the same as {%@}", path1, path2);
 #endif
+}
+
+- (void) testUnitTestsRunning
+{
+    BOOL running = NO;
+    STAssertNoThrow(running = [TestDetector runningTests], @"");
+    STAssertTrue(running, @"");
 }
 
 @end
