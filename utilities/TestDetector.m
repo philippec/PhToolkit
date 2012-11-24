@@ -16,6 +16,8 @@
     NSDictionary *env = [[NSProcessInfo processInfo] environment];
     if ([env valueForKey:@"XCInjectBundle"] != nil)
         return YES;
+    if ([[env valueForKey:@"WRAPPER_EXTENSION"] isEqualToString:@"octest"])
+        return YES;
     if ([@"otest" isEqualToString:[[NSProcessInfo processInfo] processName]])
         return YES;
 
