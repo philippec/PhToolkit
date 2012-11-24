@@ -11,12 +11,13 @@
 		3721293612636ED1002E9847 /* NSDateAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3721293512636ED1002E9847 /* NSDateAdditions.m */; };
 		377D5AA21647052400B2F9FC /* TestDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 377D5AA11647052400B2F9FC /* TestDetector.m */; };
 		379959561274FCA60035EFC4 /* NSBundleAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 379959551274FCA60035EFC4 /* NSBundleAdditions.m */; };
+		37AEE4EB1661439C006571C2 /* BundleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AEE4E91661439C006571C2 /* BundleTests.m */; };
+		37AEE4EC1661439C006571C2 /* DateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AEE4EA1661439C006571C2 /* DateTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		372128F512636C56002E9847 /* Unit Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		372128F712636C56002E9847 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3721290E12636D2D002E9847 /* Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tests.h; path = tests/Tests.h; sourceTree = "<group>"; };
 		3721290F12636D2D002E9847 /* Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tests.m; path = tests/Tests.m; sourceTree = "<group>"; };
 		3721293412636ED1002E9847 /* NSDateAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDateAdditions.h; path = categories/NSDateAdditions.h; sourceTree = "<group>"; };
 		3721293512636ED1002E9847 /* NSDateAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDateAdditions.m; path = categories/NSDateAdditions.m; sourceTree = "<group>"; };
@@ -25,6 +26,8 @@
 		377D5AA11647052400B2F9FC /* TestDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestDetector.m; path = utilities/TestDetector.m; sourceTree = "<group>"; };
 		379959541274FCA60035EFC4 /* NSBundleAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSBundleAdditions.h; path = categories/NSBundleAdditions.h; sourceTree = "<group>"; };
 		379959551274FCA60035EFC4 /* NSBundleAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSBundleAdditions.m; path = categories/NSBundleAdditions.m; sourceTree = "<group>"; };
+		37AEE4E91661439C006571C2 /* BundleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BundleTests.m; path = tests/BundleTests.m; sourceTree = "<group>"; };
+		37AEE4EA1661439C006571C2 /* DateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DateTests.m; path = tests/DateTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +64,8 @@
 		3721290712636CE9002E9847 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				3721290E12636D2D002E9847 /* Tests.h */,
+				37AEE4E91661439C006571C2 /* BundleTests.m */,
+				37AEE4EA1661439C006571C2 /* DateTests.m */,
 				3721290F12636D2D002E9847 /* Tests.m */,
 			);
 			name = Tests;
@@ -171,6 +175,8 @@
 				3721293612636ED1002E9847 /* NSDateAdditions.m in Sources */,
 				379959561274FCA60035EFC4 /* NSBundleAdditions.m in Sources */,
 				377D5AA21647052400B2F9FC /* TestDetector.m in Sources */,
+				37AEE4EB1661439C006571C2 /* BundleTests.m in Sources */,
+				37AEE4EC1661439C006571C2 /* DateTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
