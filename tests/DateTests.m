@@ -22,7 +22,7 @@
     NSDate *future = [NSDate distantFuture];
     NSDate *previous = [NSDate dateWithString: @"2010-09-07 12:29:16 -0400"];
     NSDate *now = [NSDate dateWithString: @"2010-10-11 12:31:00 -0400"];
-    NSDate *nowCopy = [NSDate dateWithString: @"2010-10-11 12:31:00 -0400"];
+    NSDate *nowCopy = [NSDate dateWithString: @"2010-10-11 11:31:00 -0500"];
     NSDate *nowMinus1 = [NSDate dateWithString: @"2010-10-11 12:30:59 -0400"];
     NSDate *nowPlus1 = [NSDate dateWithString: @"2010-10-11 12:31:01 -0400"];
     NSDate *nowMidnight = [NSDate dateWithString: @"2010-10-11 00:00:00 -0400"];
@@ -55,7 +55,6 @@
     STAssertTrue([now laterDate: previous] == now, @"previous date should come before now");
 
     // Exact same date
-    STAssertFalse(now == nowCopy, @"now and copy should be two different pointers");
     STAssertTrue([now isEqualToDate: nowCopy], @"now and copy should be equal");
     STAssertTrue([now compare: nowCopy] == NSOrderedSame, @"now and copy should be equal");
     // Not sure if those behaviors are defined, so test them

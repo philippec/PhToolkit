@@ -14,7 +14,12 @@
 + (BOOL) runningTests
 {
     NSDictionary *env = [[NSProcessInfo processInfo] environment];
-    return ([env valueForKey:@"XCInjectBundle"] != nil);
+    if ([env valueForKey:@"XCInjectBundle"] != nil)
+        return YES;
+    if ([@"otest" isEqualToString:[[NSProcessInfo processInfo] processName]])
+        return YES;
+
+    return NO;
 }
 
 @end
