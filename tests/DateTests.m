@@ -130,4 +130,24 @@
     STAssertTrue([nowMidnight laterDateForDay: nextDayMidnight] == nextDayMidnight, @"should not be equal after one day");
 }
 
+- (void)testMidnight
+{
+    NSDate *now = [NSDate dateWithString: @"2010-10-11 12:31:00 -0400"];
+    NSDate *nowMidnight = [NSDate dateWithString: @"2010-10-11 00:00:00 -0400"];
+    NSDate *nowMidnightUTC = [NSDate dateWithString: @"2010-10-11 00:00:00 -0000"];
+    NSDate *nowAlmostMidnight = [NSDate dateWithString: @"2010-10-11 23:59:59 -0400"];
+
+    NSDate *testMidnight = nil;
+    STAssertNoThrow(testMidnight = [now midnight], @"");
+    STAssertEqualObjects(testMidnight, nowMidnight, @"");
+
+    testMidnight = nil;
+    STAssertNoThrow(testMidnight = [nowAlmostMidnight midnight], @"");
+    STAssertEqualObjects(testMidnight, nowMidnight, @"");
+
+    testMidnight = nil;
+    STAssertNoThrow(testMidnight = [now midnightUTC], @"");
+    STAssertEqualObjects(testMidnight, nowMidnightUTC, @"");
+}
+
 @end

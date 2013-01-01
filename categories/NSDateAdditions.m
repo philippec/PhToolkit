@@ -44,3 +44,35 @@
 }
 
 @end
+
+
+@implementation NSDate (CreationAdditions)
+
+- (NSDate *)midnightInTimeZone:(NSTimeZone *)timeZone
+{
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    if (timeZone)
+        [calendar setTimeZone:timeZone];
+
+    NSDateComponents *dateComponents = [calendar components:NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit fromDate:self];
+    [dateComponents setHour:0];
+    [dateComponents setMinute:0];
+    [dateComponents setSecond:0];
+
+    NSDate *midnightForTimeZone = [calendar dateFromComponents:dateComponents];
+    [calendar release];
+
+    return midnightForTimeZone;
+}
+
+- (NSDate *)midnightUTC
+{
+    return [self midnightInTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
+}
+
+- (NSDate *)midnight
+{
+    return [self midnightInTimeZone:nil];
+}
+
+@end

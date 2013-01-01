@@ -17,3 +17,10 @@
 - (BOOL) isEqualToDateForDay: (NSDate*) otherDate;
 
 @end
+
+@interface NSDate (CreationAdditions)
+
+- (NSDate *)midnightUTC;
+- (NSDate *)midnight;
+
+@end
