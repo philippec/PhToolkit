@@ -188,6 +188,7 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -196,6 +197,7 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
